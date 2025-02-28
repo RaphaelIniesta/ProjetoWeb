@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      height: 100px;
+  }
+  
+  header {
+      background-color: #900;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  main {
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+      flex: 1;
+  }
+  
+  section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+      color: #900;
+      margin-bottom: 10px;
+  }
+  
+  .accordion {
+      background-color: #900;
+      color: white;
+      cursor: pointer;
+      width: 100%;
+      padding: 15px;
+      text-align: left;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  
+  .accordion:hover {
+      background-color: #b00;
+    }
+
+  .panel {
+        display: none;
+        padding: 15px;
+        background-color: #f9f9f9;
+        text-align: left;
+        border-radius: 5px;
+        margin-top: 5px;
+  }
+  
+    .seta {
+        font-size: 20px;
+        transition: transform 0.3s ease;
+  }
+  
+    footer {
+        background-color: #900;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: auto;
+  }
+  
+  
+      @media (max-width: 768px) {
+          main {
+              width: 95%;
+          }
+  }
+  
+      #cursos {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch; 
+  }
+
+      .curso {
+          width: 100%;
+  }
+  
+      @media (max-width: 768px) {
+          main {
+              width: 95%;
+          }
+  
+          #cursos {
+              flex-direction: column;
+          }
+  
+          .curso {
+              flex: 1 1 100%;
+          }
+  }
+  
+      @media (min-width: 768px) and (max-width: 1024px) {
+          main {
+              width: 90%;
+          }
+  
+          .curso {
+              flex: 1 1 48%;
+          }
+  }
