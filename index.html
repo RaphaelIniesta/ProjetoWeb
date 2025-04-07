@@ -10,39 +10,67 @@
     <header>
         <h1>Faculdade de Computação e Informática - Mackenzie</h1>
     </header>
+
     <main>
         <section id="sobre">
             <h2>Sobre os Cursos</h2>
             <p>Conheça os cursos da FCI e encontre o melhor para você.</p>
         </section>
+
         <section id="cursos">
             <h2>Nossos Cursos</h2>
-            <div class="curso">
+            <article class="curso">
                 <button class="accordion">Sistemas de Informação <span class="seta">▼</span></button>
-                <div class="panel">
+                <article class="panel">
                     <p>O curso de Sistemas de Informação forma profissionais para atuar no desenvolvimento e gestão de sistemas computacionais.</p>
-                </div>
-            </div>
-            <div class="curso">
+                </article>
+            </article>
+            <article class="curso">
                 <button class="accordion">Engenharia de Software <span class="seta">▼</span></button>
-                <div class="panel">
+                <article class="panel">
                     <p>Engenharia de Software foca na criação, manutenção e melhoria contínua de softwares de qualidade.</p>
-                </div>
-            </div>
-            <div class="curso">
-                <button class="accordion">Ciência da Computação <span class="seta">▼</span> 
-</button>
-                <div class="panel">
+                </article>
+            </article>
+            <article class="curso">
+                <button class="accordion">Ciência da Computação <span class="seta">▼</span></button>
+                <article class="panel">
                     <p>O curso de Ciência da Computação abrange teoria e prática da computação, incluindo algoritmos e inteligência artificial.</p>
-                </div>
-            </div>
-            <div class="curso">
+            </article>
+            </article>
+            <article class="curso">
                 <button class="accordion">Jogos Digitais <span class="seta">▼</span></button>
-                <div class="panel">
+<article class="panel">
                     <p>Jogos Digitais prepara os alunos para desenvolver games, trabalhando com design, programação e experiência do usuário.</p>
-                </div>
-            </div>
-</section>
+                </article>
+            </article>
+        </section>
+
+        <section id="formulario">
+            <h2>Matricule-se Agora</h2>
+            <form id="formMatricula">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Número de Celular:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="curso">Curso Desejado:</label>
+                <select id="curso" name="curso" required>
+                    <option value="">Selecione um curso</option>
+                    <option value="Sistemas de Informação">Sistemas de Informação</option>
+                    <option value="Engenharia de Software">Engenharia de Software</option>
+                    <option value="Ciência da Computação">Ciência da Computação</option>
+                    <option value="Jogos Digitais">Jogos Digitais</option>
+                </select>
+
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+            <p id="mensagemConfirmacao" style="display: none; color: green; margin-top: 10px;">Inscrição enviada com sucesso!</p>
+        </section>
+
         <section id="contato">
             <h2>Entre em Contato</h2>
             <p>Email: contato@mackenzie.br</p>
@@ -50,8 +78,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; copyright 2025 FCI Mackenzie - Todos os direitos reservados</p>
+        <p>&copy; 2025 FCI Mackenzie - Todos os direitos reservados</p>
     </footer>
+
     <script src="scripts.js"></script>
 </body>
-</html> 
+</html>
